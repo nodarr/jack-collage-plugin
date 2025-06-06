@@ -1,0 +1,53 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Jack Collage API",
+    "version": "1.0.0",
+    "description": "API to generate a travel collage using image URLs and text."
+  },
+  "paths": {
+    "/generate-collage": {
+      "post": {
+        "summary": "Generate a collage",
+        "operationId": "generateCollage",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "image_urls": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  },
+                  "title": { "type": "string" },
+                  "cta": { "type": "string" }
+                },
+                "required": ["image_urls"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Collage HTML generated",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "collage_html": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
