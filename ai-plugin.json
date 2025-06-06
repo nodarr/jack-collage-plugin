@@ -7,7 +7,7 @@
   "auth": { "type": "none" },
   "api": {
     "type": "openapi",
-    "url": "https://your-render-url.com/openapi.json"
+    "url": "https://jack-collage-plugin.onrender.com"
   },
   "logo_url": "https://yourdomain.com/jack-logo.png",
   "contact_email": "support@yourdomain.com",
