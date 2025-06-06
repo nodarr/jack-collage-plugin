@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "jack_collage_creator",
+  "name_for_human": "Jack Collage Creator",
+  "description_for_model": "Generates a travel-themed collage using uploaded image URLs and optional text overlay (title, CTA).",
+  "description_for_human": "Upload your images and let Jack generate a stunning downloadable travel collage.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://jack-collage-plugin.onrender.com/openapi.json"
+  },
+  "logo_url": "https://yourdomain.com/logo.png",
+  "contact_email": "support@yourdomain.com",
+  "legal_info_url": "https://yourdomain.com/legal"
+}
